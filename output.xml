@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on darwin)" generated="20200414 07:53:53.151" rpa="false">
+<suite id="s1" name="Company Infor" source="/Users/thutham/PycharmProjects/Tenshoku/TC_UpdateProfile/Company_Infor.robot">
+<test id="s1-t1" name="Verify the user can update company-infor with all valid information">
+<kw name="Open by Chrome" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://web.tenshoku-dev.scrum-dev.com/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200414 07:53:53.339" level="INFO">Opening browser 'Chrome' to base url 'https://web.tenshoku-dev.scrum-dev.com/'.</msg>
+<status status="PASS" starttime="20200414 07:53:53.339" endtime="20200414 07:54:00.299"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:53:53.339" endtime="20200414 07:54:00.300"></status>
+</kw>
+<kw name="Log in" library="resource">
+<arguments>
+<arg>mario@yopmail.com</arg>
+<arg>123456</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:log-in-btn</arg>
+</arguments>
+<msg timestamp="20200414 07:54:00.303" level="INFO">Clicking element 'class:log-in-btn'.</msg>
+<status status="PASS" starttime="20200414 07:54:00.302" endtime="20200414 07:54:00.534"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:icon-company</arg>
+</arguments>
+<msg timestamp="20200414 07:54:00.535" level="INFO">Clicking element 'class:icon-company'.</msg>
+<status status="PASS" starttime="20200414 07:54:00.535" endtime="20200414 07:54:00.711"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200414 07:54:03.712" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200414 07:54:00.711" endtime="20200414 07:54:03.712"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200414 07:54:03.713" level="INFO">Typing text 'mario@yopmail.com' into text field 'username'.</msg>
+<status status="PASS" starttime="20200414 07:54:03.712" endtime="20200414 07:54:04.064"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200414 07:54:04.067" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20200414 07:54:04.127" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200414 07:54:04.261" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200414 07:54:04.065" endtime="20200414 07:54:04.261"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="login-page"]/div[2]/div/form/button</arg>
+</arguments>
+<msg timestamp="20200414 07:54:04.262" level="INFO">Clicking button 'xpath://*[@id="login-page"]/div[2]/div/form/button'.</msg>
+<status status="PASS" starttime="20200414 07:54:04.261" endtime="20200414 07:54:04.405"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200414 07:54:06.406" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200414 07:54:04.405" endtime="20200414 07:54:06.406"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:00.301" endtime="20200414 07:54:06.406"></status>
+</kw>
+<kw name="open company profile" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:fullname</arg>
+</arguments>
+<msg timestamp="20200414 07:54:06.408" level="INFO">Clicking element 'class:fullname'.</msg>
+<status status="PASS" starttime="20200414 07:54:06.408" endtime="20200414 07:54:06.527"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:link</arg>
+</arguments>
+<msg timestamp="20200414 07:54:06.530" level="INFO">Clicking element 'class:link'.</msg>
+<status status="PASS" starttime="20200414 07:54:06.528" endtime="20200414 07:54:06.715"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:06.407" endtime="20200414 07:54:06.715"></status>
+</kw>
+<kw name="update company infor with new account" library="resource">
+<kw name="open 会社基本情報の編集 pop up" library="resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200414 07:54:08.718" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200414 07:54:06.716" endtime="20200414 07:54:08.719"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="profile-container"]/div[3]/div[3]/div[1]/img</arg>
+</arguments>
+<msg timestamp="20200414 07:54:08.720" level="INFO">Clicking element 'xpath://*[@id="profile-container"]/div[3]/div[3]/div[1]/img'.</msg>
+<status status="PASS" starttime="20200414 07:54:08.719" endtime="20200414 07:54:08.966"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200414 07:54:10.968" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200414 07:54:08.967" endtime="20200414 07:54:10.969"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:06.716" endtime="20200414 07:54:10.969"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[1]/div[1]/div/div/div[1]</arg>
+</arguments>
+<status status="PASS" starttime="20200414 07:54:10.969" endtime="20200414 07:54:11.010"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[1]/div[1]/div/div/div[1]</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.010" level="INFO">Clicking element 'xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[1]/div[1]/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20200414 07:54:11.010" endtime="20200414 07:54:11.134"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:react-select-2-option-4</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.135" level="INFO">Clicking element 'id:react-select-2-option-4'.</msg>
+<status status="PASS" starttime="20200414 07:54:11.134" endtime="20200414 07:54:11.377"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:capital</arg>
+<arg>Tokyo</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.378" level="INFO">Typing text 'Tokyo' into text field 'name:capital'.</msg>
+<status status="PASS" starttime="20200414 07:54:11.378" endtime="20200414 07:54:11.602"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.flatpickr-input</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.603" level="INFO">Clicking element 'css:.flatpickr-input'.</msg>
+<status status="PASS" starttime="20200414 07:54:11.603" endtime="20200414 07:54:11.691"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>css:.flatpickr-monthDropdown-months</arg>
+<arg>5月</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.691" level="INFO">Selecting options from selection list 'css:.flatpickr-monthDropdown-months' by label 5月.</msg>
+<status status="PASS" starttime="20200414 07:54:11.691" endtime="20200414 07:54:11.759"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>aofSales</arg>
+<arg>2000$</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.759" level="INFO">Typing text '2000$' into text field 'aofSales'.</msg>
+<status status="PASS" starttime="20200414 07:54:11.759" endtime="20200414 07:54:11.965"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>nofEmployees</arg>
+<arg>11~30</arg>
+</arguments>
+<msg timestamp="20200414 07:54:11.966" level="INFO">Selecting options from selection list 'nofEmployees' by label 11~30.</msg>
+<status status="PASS" starttime="20200414 07:54:11.965" endtime="20200414 07:54:12.032"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${result1}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.046" level="INFO">Current page contains element 'xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.033" endtime="20200414 07:54:12.047"></status>
+</kw>
+<msg timestamp="20200414 07:54:12.047" level="INFO">${result1} = True</msg>
+<status status="PASS" starttime="20200414 07:54:12.033" endtime="20200414 07:54:12.047"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${result1} is ${True}</arg>
+<arg>Run Keywords</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>css:.input-group:nth-child(6) .css-1pcexqc-container</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>id:react-select-3-option-0</arg>
+<arg>ELSE</arg>
+<arg>run keywords</arg>
+<arg>click element</arg>
+<arg>css:.input-group:nth-child(6) .css-1pcexqc-container</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>id:react-select-3-option-0</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>click element</arg>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>css:.input-group:nth-child(6) .css-1pcexqc-container</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>id:react-select-3-option-0</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.048" level="INFO">Clicking element 'xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[6]/div/div/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.048" endtime="20200414 07:54:12.138"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.input-group:nth-child(6) .css-1pcexqc-container</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.139" level="INFO">Clicking element 'css:.input-group:nth-child(6) .css-1pcexqc-container'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.138" endtime="20200414 07:54:12.219"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:react-select-3-option-0</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.220" level="INFO">Clicking element 'id:react-select-3-option-0'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.219" endtime="20200414 07:54:12.323"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:12.048" endtime="20200414 07:54:12.323"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:12.047" endtime="20200414 07:54:12.323"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.modal-content</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.323" level="INFO">Clicking element 'css:.modal-content'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.323" endtime="20200414 07:54:12.400"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${result2}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.424" level="INFO">Current page contains element 'xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.402" endtime="20200414 07:54:12.424"></status>
+</kw>
+<msg timestamp="20200414 07:54:12.424" level="INFO">${result2} = True</msg>
+<status status="PASS" starttime="20200414 07:54:12.401" endtime="20200414 07:54:12.424"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${result2} is ${True}</arg>
+<arg>Run Keywords</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>css:.input-group:nth-child(7) .css-1pcexqc-container</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>id:react-select-4-option-0</arg>
+<arg>ELSE</arg>
+<arg>run keywords</arg>
+<arg>click element</arg>
+<arg>css:.input-group:nth-child(6) .css-1pcexqc-container</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>id:react-select-4-option-0</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>click element</arg>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>css:.input-group:nth-child(7) .css-1pcexqc-container</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>id:react-select-4-option-0</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.427" level="INFO">Clicking element 'xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[7]/div/div/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.426" endtime="20200414 07:54:12.520"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.input-group:nth-child(7) .css-1pcexqc-container</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.522" level="INFO">Clicking element 'css:.input-group:nth-child(7) .css-1pcexqc-container'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.521" endtime="20200414 07:54:12.640"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:react-select-4-option-0</arg>
+</arguments>
+<msg timestamp="20200414 07:54:12.642" level="INFO">Clicking element 'id:react-select-4-option-0'.</msg>
+<status status="PASS" starttime="20200414 07:54:12.641" endtime="20200414 07:54:12.791"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:12.426" endtime="20200414 07:54:12.791"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:12.425" endtime="20200414 07:54:12.791"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200414 07:54:14.792" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200414 07:54:12.791" endtime="20200414 07:54:14.793"></status>
+</kw>
+<kw name="Double Click Element" library="Selenium2Library">
+<doc>Double clicks the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:.modal-content</arg>
+</arguments>
+<msg timestamp="20200414 07:54:14.794" level="INFO">Double clicking element 'css:.modal-content'.</msg>
+<status status="PASS" starttime="20200414 07:54:14.793" endtime="20200414 07:54:15.189"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200414 07:54:17.191" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200414 07:54:15.189" endtime="20200414 07:54:17.191"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[8]/button</arg>
+</arguments>
+<msg timestamp="20200414 07:54:17.192" level="INFO">Clicking element 'xpath://*[@id="edit-company-profile"]/div/div[3]/form/div[8]/button'.</msg>
+<status status="PASS" starttime="20200414 07:54:17.192" endtime="20200414 07:54:17.535"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:54:06.715" endtime="20200414 07:54:17.536"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200414 07:54:17.537" endtime="20200414 07:54:17.717"></status>
+</kw>
+<status status="PASS" starttime="20200414 07:53:53.338" endtime="20200414 07:54:17.717" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20200414 07:53:53.153" endtime="20200414 07:54:17.719"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Company Infor">Company Infor</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
